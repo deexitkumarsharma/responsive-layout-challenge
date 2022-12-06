@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: #817c7c;
+    height: 10vh;
+}
+
+.flex_container {
+    display: flex;
+    height: 75vh;
+    margin: 3vh 0vh;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.boxA {
+    background-color: rgb(199, 9, 9);
+    flex: 1;
+}
+
+.boxB {
+    background-color: rgb(231, 83, 14);
+    flex: 1;
+}
+
+.boxC {
+    background-color: rgba(236, 236, 25, 0.911);
+    flex: 1;
+}
+
+/* For iPad and iPad pro */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .flex_col {
+        flex: 1;
+    }
+}
+
+/* this will cover your all mobile/cellphone widths */
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    .flex_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex_col {
+        flex: 2;
+    }
+}
